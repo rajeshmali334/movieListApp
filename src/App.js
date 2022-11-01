@@ -6,7 +6,7 @@ import data from "./datalist";
 function App() {
   return (
     <>
-      <h1 className="heading">Top Netflix Series</h1>
+      <h1 className="heading">Top Movie List</h1>
       <div className="cards">
         {data.map((value, index) => {
           return (
