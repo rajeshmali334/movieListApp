@@ -1,0 +1,81 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,300&display=swap"); */
+
+* {
+  box-sizing: border-box;
+  font-family: cursive;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+body {
+  /* background-image: url(https://images.unsplash.com/photo-1550775535-8deb09c96f44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=434&q=80); */
+  background-image: url("https://thumbs.gfycat.com/AnyFaithfulHylaeosaurus.webp");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+}
+.heading {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  background: #28282b;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+div.cards {
+  animation: 1s ease-out 0s 1 slideInFromRight;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  box-shadow: 4px 4px 10px rgb(172, 161, 161);
+  margin: 5rem;
+  background-color: black;
+  color: white;
+  padding: 2%;
+  border-radius: 11px;
+}
+.cards img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+.card:hover {
+  box-shadow: 5px 5px 10px rgb(116, 111, 111);
+  position: relative;
+  top: -2px;
+  right: 2px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
